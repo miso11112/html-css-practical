@@ -26,11 +26,10 @@ font-family:"Josefin Sans", serif;
     margin-right: 18px;
 }
 
-.main{
-   width: 1440px;
-    height: 587.76px;
-    top: 140px;
-   
+.main img
+{
+width: 100%;
+
 }
 
 
@@ -38,14 +37,8 @@ h1{
     text-align: center;
     font-family:"Noto Sans JP", serif;
     font-size: 34px;
-}
-
-.about-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto; 
-   
+    
+    
 }
 
 .photo-container {
@@ -61,10 +54,13 @@ h1{
 }
 
 h2{
-    font-family: "Noto Sans JP";
+    font-family: "Noto Sans JP" , serif;
     font-size: 24px;
-    margin-bottom:18px;
-    display: flex;
+    margin:18px;
+   text-align: left;
+   margin-top: 123px;
+   
+    
 }
 
 .text-container {
@@ -73,26 +69,102 @@ h2{
 
 .text-container ul {
     font-size: 18px;
-    padding: 0; 
-   width: 405px;
+    font-family:"Noto Sans JP", serif;
+    
+
 }
 
-.work1{
-    display: flex;
-    width: 240px;
+h3{
+    text-align: center;
+    font-family:"Noto Sans JP", serif;
+    font-size: 34px;
 }
 
-.work2{
+.inner{
     display: flex;
-    width: 240px;
+    justify-content: center;
+    gap: 16px;
+    display: flex;
+    margin: 0 auto;
+
 }
 
-.work3{
-    display: flex;
+
+
+.works-item img{
+    width: 100%;
+    
+    
+}
+
+.works-item{
+    font:"Noto Sans JP", serif;
+    font-size: 18px;
+    overflow: hidden;
     width: 240px;
+    
+}
+
+
+footer{
+    text-align: center;
 }
 
   /*====================
    スマートフォン用のスタイル
   =====================*/
- 
+  @media screen and (max-width: 767px) {
+
+    #nav-pc {
+      display: none;
+    }
+    header {
+        flex-direction: column;
+        text-align: center;
+
+  }
+  header nav {
+    flex-direction: column;
+    gap: 5px;
+}
+
+.photo-gallery {
+    grid-template-columns: 1fr; /* 1列表示 */
+}
+
+img {
+    margin-bottom: 10px; /* 写真間の余白 */
+}
+
+.main {
+    text-align: center;
+}
+
+.kazuki{
+    width: 100%; /* 画像の幅を調整 */
+    max-width: 280px; /* 最大幅を設定 */
+    border-radius: 50%; /* 円形にする（必要なら） */
+    text-align: center; /* 中央揃え */
+    margin: 0 auto; /* 中央に配置 */
+    display: block; /* ブロック要素として配置（文字が隣に来ないようにする） */
+  }
+  
+  .myprofile-text {
+    margin-top: 15px; /* 画像とテキストの間隔 */
+  }
+  
+   h2 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .text-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    line-height: 26.06px;
+  }
+}
