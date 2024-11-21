@@ -86,7 +86,12 @@ h3{
     gap: 16px;
     display: flex;
     margin: 0 auto;
-
+    padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 960px;
 }
 
 
@@ -128,10 +133,6 @@ footer{
     gap: 5px;
 }
 
-.photo-gallery {
-    grid-template-columns: 1fr; /* 1列表示 */
-}
-
 img {
     margin-bottom: 10px; /* 写真間の余白 */
 }
@@ -147,9 +148,11 @@ img {
     text-align: center; /* 中央揃え */
     margin: 0 auto; /* 中央に配置 */
     display: block; /* ブロック要素として配置（文字が隣に来ないようにする） */
+    padding: 10px;
+
   }
   
-  .myprofile-text {
+  .text-container ul {
     margin-top: 15px; /* 画像とテキストの間隔 */
   }
   
@@ -167,4 +170,13 @@ img {
     font-size: 18px;
     line-height: 26.06px;
   }
+
+  .works-item{
+    display: flex; /* Flexboxで配置 */
+    flex-wrap: wrap; /* アイテムを折り返し可能にする */
+    justify-content: center; /* アイテムを中央揃え */
+    gap: 20px; /* アイテム間の余白 */
+    padding: 20px; /* 全体の余白 */
+  }
 }
+
